@@ -1,6 +1,7 @@
 // VideoPlayer.js
 import React, { useState, useEffect } from "react";
 import { listVideos, getVideoURL } from "./videoService";
+import './App.css'; // Ensure you import the CSS file
 
 const VideoPlayer = () => {
   const [videos, setVideos] = useState([]);
@@ -33,17 +34,16 @@ const VideoPlayer = () => {
   }, []);
 
   return (
-    <div>
+    <div className="VideoPlayer">
       {error && <p style={{ color: "red" }}>{error}</p>}
       {videos.length > 0 && (
         <div>
-          <h3>  </h3>
-          <h3 className="Title" >Video Files:</h3>
+          <h3 className="Title">Video Files:</h3>
           <ul>
             {videos.map((video, index) => (
               <div key={index}>
                 <p className="Title">{titles[index]}</p>
-                <video width="600" controls>
+                <video controls>
                   <source src={video.url} type="video/mp4" />
                 </video>
               </div>

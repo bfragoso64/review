@@ -1,3 +1,4 @@
+/* App.css */
 .App {
   text-align: center;
 }
@@ -5,14 +6,8 @@
 .App-logo {
   height: 20vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 40s linear;
 }
-
-
-  .App-logo {
-    animation: App-logo-spin infinite 40s linear ;
-    
-  }
-
 
 .App-header {
   background-color: #1f4462;
@@ -21,35 +16,66 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
   color: rgb(255, 255, 255);
 }
 
 .App-link {
   color: #92c4b2;
-  font-size:20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(deg);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
 }
-.div2{
-background-color: rgb(27, 63, 103);
-margin-top: -30px;
-height:2400px;
 
+.div2 {
+  background-color: rgb(27, 63, 103);
+  margin-top: -30px;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.div3{
-  margin-top:30px;
+
+.div3 {
+  margin-top: 30px;
 }
-.Title{
+
+.Title {
   color: white;
   font-size: 30px;
 }
 
+.VideoPlayer {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.VideoPlayer video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Title {
+    font-size: 20px;
+  }
+
+  .App-header {
+    padding: 10px;
+  }
+
+  .App-link {
+    font-size: 16px;
+  }
+
+  .div2 {
+    padding: 10px;
+  }
+}

@@ -20,9 +20,9 @@ function App() {
         </a>
       </header>
       <div className="div2">
-        <div >
+  
         <VideoPlayer  />
-        </div>
+       
       </div>
     </div>
   );
