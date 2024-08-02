@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={require("./unnamed.png")} className="App-logo" alt="logo" />
-        <p className="title">CCRN & PCCN</p>
+        <p className="title"> CCRN & PCCN </p>
         <a
           className="App-link"
           href="https://www.dropbox.com/scl/fo/slp5qzush6kk8rwxmd50n/h?rlkey=d5wn5kf1utt0rk3r75602aenj&e=2&dl=0"
